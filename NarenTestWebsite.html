@@ -1,0 +1,16 @@
+<!-- Gen App Builder widget bundle -->
+<script src="https://cloud.google.com/ai/gen-app-builder/client"></script>
+
+<!-- Search widget element is not visible by default -->
+<gen-search-widget
+  configId="4a6e0b8f-ab13-45af-b2cd-c92e382b720b"
+  triggerId="searchWidgetTrigger">
+</gen-search-widget>
+
+<!-- Element that opens the widget on click. It does not have to be an input -->
+<input placeholder="Search here" id="searchWidgetTrigger" />
+In your UI codebase, generate an auth token (JWT or OAuth) and pass it to the widget. Learn more. 
+
+// Set authorization token.
+const searchWidget = document.querySelector('gen-search-widget');
+searchWidget.authToken = "<24ee73dce81db796758266c452d8eaa106c28c3cf4ee3ce7f05bcb09fd22b1633-297875d1-101a-49d2-a571-f12fc506287e010242234>";
